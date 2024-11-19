@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>-SS</title>
+</head>
+<body>
+    <input id="a" type="text">
+    <input id="b" type="text">
+    <button onclick="lala()">lala</button>
+    <input id="lala" type="text">
+   
+<script >
+    const input1 = document.getElementById("a");
+    const input2 = document.getElementById("b");
+    const input3 = document.getElementById("lala");
+
+    function lala(){
+        let niz = input1.value.split(" ");
+        let firstElement = niz.shift();
+        let n = input2.value;
+        niz.splice(n,0,firstElement);
+        let rezultat = niz.join(" ");
+        input3.value = rezultat;
+    }
+
+</script>
+</body>
+</html>
+
